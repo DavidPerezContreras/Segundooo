@@ -28,6 +28,7 @@ public class Plantilla2 {
 	//Mete los empleados existentes en el fichero dentro de un ArrayList<Empleado>
 	//Muestra los datos de los empleados
 	public static void muestraEmpleados() {
+		//File  .src/datos/Plantilla2.dat
 		File filePlantilla2= new File("src"+slash+"datos"+slash+"Plantilla2.dat");
 		
 		if(filePlantilla2.length()<=0) {
@@ -83,9 +84,7 @@ public class Plantilla2 {
 		final File filePlantilla2 = new File("src"+slash+"datos"+slash+"Plantilla2.dat");
 	
 			try {
-				
-				
-				
+
 				if(filePlantilla2.length()<=0) {
 				
 					ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(filePlantilla2));
